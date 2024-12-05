@@ -1,9 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   imports: [],
-  template: `<p>tjrieoirtj</p>`,
-  styles: ``,
+  template: `<div class="header">{{ title() }}</div>`,
+  styles: `
+  
+    .header {
+      background-color: gray;
+      padding: 1rem;
+      color: black;
+    }
+
+  `,
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  title = signal('Angular Ecomerce');
+}
