@@ -1,9 +1,9 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 
 @Component({
   selector: 'app-primary-button',
   imports: [],
-  template: `<button (click)="handleButtonCLick()">
+  template: `<button (click)="btnClicked.emit()">
     {{ label() }}
   </button>`,
   styles: ``,
@@ -11,7 +11,5 @@ import { Component, input } from '@angular/core';
 export class PrimaryButtonComponent {
   label = input('');
 
-  handleButtonCLick() {
-    console.log('Button clicked');
-  }
+  btnClicked = output();
 }

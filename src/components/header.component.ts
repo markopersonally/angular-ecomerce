@@ -6,10 +6,13 @@ import { PrimaryButtonComponent } from './primary-button.component';
   imports: [PrimaryButtonComponent],
   template: `<div class="bg-slate-100 px-4 py-3 shadow-md">
     <span>{{ title() }}</span>
-    <app-primary-button label="Cart" />
+    <app-primary-button label="Cart" (btnClicked)="showButtonClicked()"/>
   </div>`,
   styles: ``,
 })
 export class HeaderComponent {
   title = signal('Angular Ecomerce');
+  showButtonClicked(){
+    console.log("clicked")
+  }
 }
