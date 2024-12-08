@@ -7,8 +7,7 @@ import { Product } from '../models/products.model';
   template: `
     <div class="p-8 grid grid-cols-2 gap-4">
       @for (product of products(); track product.id) {
-      {{ product.title }}
-      {{ product.price }}
+      <div>{{ product.title }}</div>
       }
     </div>
   `,
