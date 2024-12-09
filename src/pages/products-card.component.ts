@@ -8,7 +8,11 @@ import { Product } from '../models/products.model';
     <div
       class="bh-white shadow-lg border rounded-xl p-10 flex flex-col justify-center items-center relative"
     >
-      {{ product().title }}
+      <img [src]="product().image" class="w-[200px] h-[100px]" />
+      <h3>{{ product().title }}</h3>
+      <h3>$ {{ product().price }}</h3>
+      <h3>{{ product().stock }}</h3>
+      <button>Buy</button>
     </div>
   `,
   styles: ``,
