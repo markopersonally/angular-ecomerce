@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { Product } from '../models/products.model';
+import { Product } from '../../models/products.model';
 import { PrimaryButtonComponent } from '../components/primary-button.component';
 
 @Component({
