@@ -17,13 +17,6 @@ import { ProductCardComponent } from './products-card.component';
 export class ProductsListComponent {
   products = signal<Product[]>([
     {
-      id: 1,
-      title: 'Wireless Headphones',
-      image: 'https://images.unsplash.com/photo-1580894908361-97a715c5f3d9',
-      price: 99.99,
-      stock: 25,
-    },
-    {
       id: 2,
       title: 'Smartwatch',
       image: 'https://images.unsplash.com/photo-1519744792095-2f2205e87b6f',
@@ -59,20 +52,6 @@ export class ProductsListComponent {
       stock: 30,
     },
     {
-      id: 7,
-      title: 'Action Camera',
-      image: 'https://images.unsplash.com/photo-1564866657314-9d86a6a53ff2',
-      price: 199.99,
-      stock: 20,
-    },
-    {
-      id: 8,
-      title: '4K Monitor',
-      image: 'https://images.unsplash.com/photo-1587825140400-3c19826448ef',
-      price: 499.99,
-      stock: 5,
-    },
-    {
       id: 9,
       title: 'External Hard Drive',
       image: 'https://images.unsplash.com/photo-1558981285-6f0c94958bb6',
@@ -80,25 +59,11 @@ export class ProductsListComponent {
       stock: 40,
     },
     {
-      id: 10,
-      title: 'Smartphone',
-      image: 'https://images.unsplash.com/photo-1512499617640-c2f999e7f25a',
-      price: 799.99,
-      stock: 18,
-    },
-    {
       id: 11,
       title: 'Tablet',
       image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8',
       price: 399.99,
       stock: 22,
-    },
-    {
-      id: 12,
-      title: 'Gaming Mouse',
-      image: 'https://images.unsplash.com/photo-1581235720704-c78a9a60c6f4',
-      price: 29.99,
-      stock: 50,
     },
   ]);
 }
